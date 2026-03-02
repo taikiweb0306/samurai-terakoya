@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13章課題</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <!-- PC用のロゴ -->
+  <a href="index.html" id="logo">
+  <img src="images/logo .png" alt="ロゴ">
+  </a>
+  <!-- PC用のナビゲーション -->
+<nav id="nav-pc">
+  <ul>
+    <li><a href="index.html#concept">CONCEPT</a></li>
+    <li><a href="index.html#product">PRODUCT</a></li>
+    <li><a href="index.html#contact">CONTACT</a></li>
+  </ul>
+</nav>
+<!-- SP用のメニューボタン -->
+<button id="menu-sp" onclick="document.getElementById('nav-sp').style.display='block'">
+  <img src="images/button-menu.png" alt="ナビゲーションを開く">
+</button>
+<!-- スマホ用のナビゲーション -->
+ <div id="nav-sp">
+
+  <button id="close" onclick="document.getElementById('nav-sp').style.display='none'">
+    <img src="images/button-close.png" alt="ナビゲーションを閉じる">
+  </button>
+ <nav>
+  <ul>
+    <li><a href="index.html" id="logo-sp" onclick="document.getElementById('nav-sp').style.display='none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a></li>
+    <li><a href="index.html#concept" class="menu" onclick="document.getElementById('nav-sp').style.display='none'">CONCEPT</a></li>
+    <li><a href="index.html#product" class="menu" onclick="document.getElementById('nav-sp').style.display='none'">PRODUCT</a></li>
+    <li><a href="index.html#contact" class="menu" onclick="document.getElementById('nav-sp').style.display='none'">CONTACT</a></li>
+
+  </ul>
+ </nav>
+ </div>
+
+</header>
+
+<main>
+  <h1>Organic Cafe</h1>
+  <h2>自家焙煎のコーヒーが買えるお店</h2>
+  <img src="images/main-image.jpg" alt="ドリップの写真">
+</main>
+</body>
+</html>
